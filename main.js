@@ -1,23 +1,41 @@
 // let btn = document.querySelector("#clickBtn");
 // btn.addEventListener("click",listen)
 
+import { addFive } from "./utils.js";
+
 // function listen() {
 //     console.log("clicked");
-    
-// }//    `${user.name} likes ${user.hobbies[0]}, ${user.hobbies[1]}, ${user.hobbies[2]}`; 
-
-const user = {
-    name: "Travis",
-    hobbies: ['skiing', 'hiking', 'biking'],
-    bio: function() {
-        this.hobbies.forEach((hobby) => {
-    const bio = `${this.name} likes ${hobby}`
-            console.log(bio)
-        });
+// }
+class User{
+    name;
+    hobbies;
+    constructor (name, hobbies) {
+      this.name = name;
+      this.hobbies = hobbies;
     }
-    
+    bio() {
+        this.hobbies.forEach((hobby) => {
+            const bio = `${this.name} likes ${hobby}`
+                    console.log(bio)
+                });
+    }
 }
-user.bio()
+const travis = new User("Travis", ['skiing', 'hiking', 'biking'])
+const mark = new User('Mark', ["coding", 'reading', 'swimming'])
+travis.bio()
+mark.bio()
+// const user = {
+//     name: "Travis",
+//     hobbies: ['skiing', 'hiking', 'biking'],
+//     bio: function() {
+//         this.hobbies.forEach((hobby) => {
+//     const bio = `${this.name} likes ${hobby}`
+//             console.log(bio)
+//         });
+//     }
+    
+// }
+// user.bio()
 
 // console.log(user.name)
 // console.log(user.hobbies)
@@ -29,4 +47,14 @@ user.bio()
 //     })
 // }
 // userInfo(user)   
+
+
+// function calculateFunction(num1) {
+//     return addFive(num1)
+// }
+// let total = calculateFunction(200) 
+// console.log(total)
+
+// calculateFunction(200)
+
 
