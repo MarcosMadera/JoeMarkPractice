@@ -88,33 +88,33 @@
 // let jsonUser = JSON.stringify(user)
 // console.log(jsonUser)
 
-// // // function hello() {
-// //     return "Hello"
-// // }
-// // console.log(hello)
+// function hello() {
+//     return "Hello"
+// }
+// console.log(hello)
 
-// // let jsonHello = JSON.stringify(hello)
-// // console.log(jsonHello)
+// let jsonHello = JSON.stringify(hello)
+// console.log(jsonHello)
 // console.log(jsonUser.name)
 
 // let parsedUser = JSON.parse(jsonUser)
-// // console.log(parsedUser.name)
-// // window.localStorage.setItem("name", "Mark")
+// console.log(parsedUser.name)
+// window.localStorage.setItem("name", "Mark")
 
-// // let item = window.localStorage.getItem('name')  
-// // console.log(item)
+// let item = window.localStorage.getItem('name')  
+// console.log(item)
 
-// let items = ['milk', 'apples', 'grapes'];
-// console.log(items)
-// let necessaryItems = JSON.stringify(items)
-// console.log(necessaryItems)
-// window.localStorage.setItem('items', necessaryItems);
+let items = ['milk', 'apples', 'grapes'];
+console.log(items)
+let necessaryItems = JSON.stringify(items)
+console.log(necessaryItems)
+window.localStorage.setItem('items', necessaryItems);
 
 let groceryList = [];
 
 let groceries = window.localStorage.getItem('items')
 
 let parsedGroceries = JSON.parse(groceries)
-// console.log(parsedGroceries)
+console.log(parsedGroceries)
 groceryList = parsedGroceries
 console.log(groceryList)
